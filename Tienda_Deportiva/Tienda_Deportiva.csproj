@@ -159,10 +159,17 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="estilos.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\fondo2.jpg" />
+    <Content Include="img\fondoTienda.jpg" />
+    <Content Include="img\imagenlineadeportiva.png" />
+    <Content Include="img\ropa2.jpg" />
+    <Content Include="img\suplemento.jpg" />
+    <Content Include="menu.css" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>

@@ -1,26 +1,35 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<link href="~/estilos.css" rel="stylesheet" />
 
-<div class="jumbotron">
-    <h1>¿Que vas a encontrar?</h1>
+
+<img src="~/img/imagenlineadeportiva.png" alt="Alternate Text" />
+<div class="jumbotron text-center">
+    <h2>¿Que vas a encontrar?</h2>
     <p class="lead">
         Encontraras productos deportivos con la mas alta calidad tanto en tela como en funcionamiento
         y a  los mejores precios del mercado.
     </p>
 </div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Ropa Deportiva</h2>
-        <p>
-            Aporta a la actividad fisica creando un ambiente de comodidad y ventajas a la hora de su uso.
-        </p>
-        <p class="btn btn-default bg-dark">@Html.ActionLink("Comprar >>", "Index", "productos")</p>
+<div class="jumbotron text-center ml-4">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Ropa Deportiva</h2>
+            <p>
+                Aporta a la actividad fisica creando un ambiente de comodidad y ventajas a la hora de su uso.
+            </p>
+            <img src="~/img/ropa2.jpg" width="200px" />
+        </div>
+        <div class="col-md-4">
+            <h2>Implementos</h2>
+            <p>Estos aportan a poner en practica el deporte y la actividad fisica​</p>
+            <img src="~/img/fondo2.jpg" width="200px" />
+        </div>
+        <div class="col-md-4">
+            <h2>Suplementos</h2>
+            <p>​Elemento que sirve para completar, aumentar o reforzar una cosa en algún aspecto</p>
+            <img src="~/img/suplemento.jpg" width="200px"/>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Implementos</h2>
-        <p>Estos aportan a poner en practica el deporte y la actividad fisica​</p>
-        <p class="btn btn-default bg-dark">@Html.ActionLink("Comprar >>", "Index", "productos")</p>
-    </div>
-</div>
+ </div>
