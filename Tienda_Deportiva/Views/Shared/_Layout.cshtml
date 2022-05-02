@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black ">
+        <div class="container-fluid d-flex w-100 justify-content-between">
+            <div class="d-flex align-items-center">
+                <span class="fs-1 text-white">Tienda Deportiva</span>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                    <li>@Html.ActionLink("Productos", "Index", "productos")</li>
+                </ul>
+            </div>
+    </nav>
+    <div class="container-fluid body-content p-5">
+        @RenderBody()
+        <hr />
+        <footer class="bg-dark  mt-4 p-3 ">
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p></p>
+                        <p>&copy; @DateTime.Now.Year - Tienda Deportiva</p>
+                        <p>Simon clavijo &copy;</p>
+                        <p>simonclagutierrez@gmail.com</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <p></p>
+                        <p>&copy; @DateTime.Now.Year - Tienda Deportiva</p>
+                        <p>Yovany lopez &copy;</p>
+                        <p>yova.lopez1@gmail.com</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <p></p>
+                        <p>&copy; @DateTime.Now.Year - Tienda Deportiva</p>
+                        <p>Edison mesa tapias &copy;</p>
+                        <p>edisontapias2003@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+
+</body>
+</html>

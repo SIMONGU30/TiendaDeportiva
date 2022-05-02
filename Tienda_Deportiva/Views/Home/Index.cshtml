@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>¿Que vas a encontrar?</h1>
+    <p class="lead">
+        Encontraras productos deportivos con la mas alta calidad tanto en tela como en funcionamiento
+        y a  los mejores precios del mercado.
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Ropa Deportiva</h2>
+        <p>
+            Aporta a la actividad fisica creando un ambiente de comodidad y ventajas a la hora de su uso.
+        </p>
+        <p class="btn btn-default bg-dark">@Html.ActionLink("Comprar >>", "Index", "productos")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Implementos</h2>
+        <p>Estos aportan a poner en practica el deporte y la actividad fisica​</p>
+        <p class="btn btn-default bg-dark">@Html.ActionLink("Comprar >>", "Index", "productos")</p>
+    </div>
+</div>

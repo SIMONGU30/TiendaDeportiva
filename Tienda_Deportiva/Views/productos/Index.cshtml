@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Tienda_Deportiva.productos>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nom_producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precio_producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cantidad_producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.imagen)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nom_producto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.precio_producto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cantidad_producto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descripcion)
+            </td>
+            <td>
+                <img src="@Url.Content(item.imagen)" width="50px" />
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.cod_producto }) |
+                @Html.ActionLink("Details", "Details", new { id = item.cod_producto }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.cod_producto })
+            </td>
+        </tr>
+
+
+
+    }
+
+</table>
+
